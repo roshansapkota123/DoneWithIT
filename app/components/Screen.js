@@ -1,12 +1,16 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet, Platform, StatusBar } from 'react-native';
+import { SafeAreaView, StyleSheet, Platform, StatusBar, View } from 'react-native';
+import colors from '../config/colors';
 
 
 
-function Screen(props) {
+function Screen({children, style}) {
     return (
         <SafeAreaView style = {styles.screen}>
-            {props.children}
+        <View style = {style}>
+        {children}
+        </View>
+           
         </SafeAreaView>
     );
 }
@@ -15,6 +19,7 @@ const styles = StyleSheet.create({
     screen: {
         paddingTop: Platform.OS === 'android' ?  StatusBar.currentHeight : 0,
         flex: 1,
+       
     },
 })
 
