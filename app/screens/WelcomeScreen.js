@@ -13,7 +13,7 @@ function WelcomeScreen(props){
             <View style = {styles.logoContainer}>
             <Image 
             style = {styles.logo}
-            source = {require("../assets/logo.jpg")}></Image>
+            source = {require("../assets/logo-red.png")}></Image>
             <Text style = {styles.tagline}>Sell Anything You Are Done With</Text>
             </View>
             <View style = {styles.buttonsContainer}>
